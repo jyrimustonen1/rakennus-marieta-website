@@ -63,6 +63,17 @@ export default function Footer() {
 
         <div className="border-t border-secondary-700 mt-8 pt-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Rakennus Marieta. Kaikki oikeudet pidätetään.</p>
+          <p className="mt-4">
+            Sivut taottu rakkaudella:{" "}
+            <a 
+              href="https://kotisivut.jyrimustonen.fi/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary-500 transition"
+            >
+              Jyri Mustonen
+            </a>
+          </p>
         </div>
       </div>
     </footer>
