@@ -27,7 +27,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white"
+            className="text-white py-8 md:py-0"
           >
             <p className="text-primary-500 text-sm uppercase mb-2 font-semibold">Tervetuloa Rakennus Marietaan</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -62,7 +62,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-2 gap-4 pt-8 pb-12 md:pt-0 md:pb-0"
           >
             {[
               { icon: "🏗️", title: "Rakennus", desc: "Kattavat rakennusprojektit" },
