@@ -177,8 +177,7 @@ export default function ContactForm() {
               Haluatko kysyä jotain?
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Pienellä joella nimeltä Duden virtaa heidän paikkansa ohi ja tarjoaa sen tarvittavilla säädöksillä. 
-              Se on paradisemaattinen maa, jossa paistetut lauseiden osat lentävät suuhusi.
+              Tarjoamme ammattitaitoista rakennus- ja saneeraustyötä Espoossa ja pääkaupunkiseudulla. Yli 30 vuoden kokemuksella varmistamme laadukkaan lopputuloksen jokaiselle projektille.
             </p>
 
             <div className="space-y-4">

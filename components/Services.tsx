@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Rakennuspalvelut",
+    title: "Rakennus",
     description: "Kattavat rakennusprojektit pienistä lisärakennuksista kokonaisiin taloihin. Suunnittelusta valmiiseen toimitukseen.",
     icon: "🏗️",
     bgColor: "bg-secondary-800",
@@ -12,19 +12,27 @@ const services = [
     buttonColor: "bg-primary-500 text-white",
   },
   {
-    title: "Infrastruktuuripalvelut",
-    description: "Ammattitaitoinen infrastruktuurin suunnittelu ja toteutus. Kestäviä ratkaisuja kestävään tulevaisuuteen.",
-    icon: "🏢",
+    title: "Saneeraus",
+    description: "Ammattitaitoinen saneeraus kosteus- ja homeongelmien korjauksesta kattoremontteihin. Kestäviä ratkaisuja.",
+    icon: "🔨",
     bgColor: "bg-primary-500",
     textColor: "text-white",
     buttonColor: "bg-white text-primary-500",
   },
   {
-    title: "Arkkitehtipalvelut",
+    title: "Suunnittelu",
     description: "Kokonaisvaltainen suunnittelu ja arkkitehtipalvelut. Yhdistämme funktionaalisuuden ja esteettisyyden.",
     icon: "📐",
     bgColor: "bg-white",
     textColor: "text-gray-900",
+    buttonColor: "bg-primary-500 text-white",
+  },
+  {
+    title: "Konsultointi",
+    description: "Asiantunteva neuvonta ja konsultointi rakennusprojekteihin. Autamme suunnittelussa ja toteutuksessa.",
+    icon: "⚙️",
+    bgColor: "bg-secondary-800",
+    textColor: "text-white",
     buttonColor: "bg-primary-500 text-white",
   },
 ];
@@ -46,20 +54,7 @@ export default function Services() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Left side - Image placeholder */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative h-96 bg-gradient-to-br from-secondary-200 to-secondary-300 rounded-lg flex items-center justify-center"
-          >
-            <div className="text-8xl">👷</div>
-          </motion.div>
-
-          {/* Right side - Service cards */}
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -88,7 +83,6 @@ export default function Services() {
                 </div>
               </motion.div>
             ))}
-          </div>
         </div>
       </div>
     </section>
